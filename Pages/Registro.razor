@@ -1,0 +1,75 @@
+﻿@page "/Registro"
+
+
+<h2><font face="Time New Roman"><b>Registro </b></font></h2>
+
+<br />
+<br />
+<br />
+
+<div style="text-align:center">
+
+    <ul>
+         <li><label><font face="Time New Roman"><b>Cedula</b></font></label>
+    <input type="text" @bind="cedula"></li>
+    <br />
+    <li><label><font face="Time New Roman"><b>Nombre</b></font></label>
+    <input type="text" @bind="nombre"></li>
+    <br />
+    <li><label><font face="Time New Roman"><b>Apellido</b></font></label>
+    <input type="text" @bind="apellido"></li>
+    <br />
+    <li><label><font face="Time New Roman"><b>Teléfono</b></font></label>
+    <input type="text" @bind="telefono"></li>
+    <br />
+    <li><label><font face="Time New Roman"><b>Correo Electrónico</b></font></label>
+    <input type="text" @bind="CE"></li>
+    <br />
+    <li><label><font face="Time New Roman"><b>Fecha de nacimiento</b></font></label>
+    <input type="text" @bind="FN"></li>
+    <br />
+    <li><label><font face="Time New Roman"><b>Tipo de Sangre</b></font></label>
+    <input type="text" @bind="TS"></li>
+    <br />
+    <li><label><font face="Time New Roman"><b>Provincia</b></font></label>
+    <input type="text" @bind="provincia"></li>
+    <br />
+    <li><label><font face="Time New Roman"><b>Dirección</b></font></label>
+    <input type="text" @bind="direccion"></li>
+    <br />
+    <li><label><font face="Time New Roman"><b>Latitud </b></font></label>
+    <input type="text" @bind="latitud"></li>
+    <br />
+    <li><label><font face="Time New Roman"><b>Longitud</b></font></label>
+    <input type="text" @bind="longitud"></li>
+    <br />
+    <li><label><font face="Time New Roman"><b>Le ha dado covid </b></font></label>
+    <input type="text" @bind="covid"></li>
+    <br />
+    <li><label><font face="Time New Roman"><b>Justifique porque deben vacunarlo en su casa. </b></font></label>
+    <input type="text" @bind="justifique"></li>
+    <br />
+         </ul>	
+   
+
+
+</div>
+
+<div style="text-align:right">
+
+        <button class="btn btn-primary" @onclick="Registrar">Registrar</button>
+    
+</div>
+
+<br />
+
+
+
+@code {
+    private string cedula, nombre, apellido, telefono, CE, FN, TS, provincia, direccion, latitud, longitud, covid, justifique;
+
+    private void Registrar()
+    {
+    }
+
+}
